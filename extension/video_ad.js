@@ -7,7 +7,7 @@ let state = {
 };
 
 const VID_CONFIG = {
-    videos: ['video1.mp4', 'video2.mp4', 'video3.mp4', 'video4.mp4', 'video5.mp4', 'video6.mp4'],
+    videos: ['video1.mp4', 'video2.mp4', 'video3.mp4', 'video4.mp4', 'video5.mp4', 'video6.mp4', 'video7.mp4', 'video8.mp4', 'video9.mp4', 'video10.mp4'],
     delays: {
         initial: () => Math.floor(Math.random() * (5 - 2 + 1) + 2) * 1000,      // 2-5s
         between: () => Math.floor(Math.random() * (180 - 120 + 1) + 120) * 1000 // 2-3m
