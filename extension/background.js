@@ -1,7 +1,11 @@
-chrome.runtime.onInstalled.addListener(() => {
+const browserAPI = chrome || browser;
+
+browserAPI.runtime.onInstalled.addListener(() => {
     console.log("Extension installed and background script running.");
 });
 
-chrome.action.onClicked.addListener((tab) => {
-    chrome.tabs.sendMessage(tab.id, { action: "toggleWebcam" });
+browserAPI.action.onClicked.addListener((tab) => {
+    if (tab.id) {
+        browserAPI.tabs.sendMessage(tab.id, { action: "toggleWebcam" });
+    }
 });
