@@ -35,7 +35,7 @@ A random popup ad for a **random** website from our dataset of the **2,500** mos
 4. If you want **vision** & **audio** functionality, open a command prompt in `server` & run `$ python main.py`.
 #### Firefox
 1. Download the source code for this project.
-2. Replace manifest.json with manifest.firefox.json
+2. Replace manifest.json with manifest.firefox.json in the "extension" folder
 3. Go to `about:debugging#/runtime/this-firefox`, click "Load Temporary Add-on…" & select the replaced "manifest.json" file in the "extension" folder.
 4. Click on the Darkaroo icon in the toolbar.
 5. If you want **vision** & **audio** functionality, open a command prompt in `server` & run `$ python main.py`.
