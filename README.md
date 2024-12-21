@@ -28,11 +28,17 @@ vidfeo here
 A random popup ad for a **random** website from our dataset of the **2,500** most visited websites on the web. Publicly available at `extension/data/dataset/data`.
 ![Website ads](github_assets/websites.png)
 ## Installation
-
+#### Chrome
 1. Download the source code for this project.
 2. Go to `chrome://extensions`, enable "Developer mode", click "Load unpacked" & select the "extension" folder.
 3. Click on the Darkaroo icon in the toolbar.
 4. If you want **vision** & **audio** functionality, open a command prompt in `server` & run `$ python main.py`.
+#### Firefox
+1. Download the source code for this project.
+2. Replace manifest.json with manifest.firefox.json
+3. Go to `about:debugging#/runtime/this-firefox`, click "Load Temporary Add-on…" & select the replaced "manifest.json" file in the "extension" folder.
+4. Click on the Darkaroo icon in the toolbar.
+5. If you want **vision** & **audio** functionality, open a command prompt in `server` & run `$ python main.py`.
 
 ### Installing Python (for vision & audio)
 
